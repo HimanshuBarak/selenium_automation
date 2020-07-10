@@ -12,15 +12,6 @@ from selenium.webdriver.common.keys import Keys
 book_name=input()
 
 
-def capital(s):
-    l=s.split(" ")
-    for i in range(len(l)):
-            l[i]=l[i].capitalize()
-    k=" ".join(l)
-    return k
-
-book_name=capital(book_name)
-
 
 driver=webdriver.Chrome(r"C:\Users\himan\Downloads\chromedriver.exe")
 driver.get("https://b-ok.cc/")
